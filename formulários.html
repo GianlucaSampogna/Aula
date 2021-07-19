@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <title>formlário com HTML</title>
+    <link rel="stylesheet" href="css do formulário.css">
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">PESQUISA PARA TIME DE LOL</h1>
+            <p id="subtitulo">Complete com sua informaçoes</p>
+             <br>
+    </div>
+
+    <form action="" method="get">
+        <fieldset class="grupo">
+            <div , class="campo">
+                <label for="nome"><strong>Nome: </strong>  </label>
+                <input type="text", name="nome", id="nome", placeholder="digite seu nome" required>
+            </div>
+            <br>
+            <div class="campo">
+                <label for="nick"><strong>Nick no jogo: </strong> </label>
+                <input type="text", name="nick", id="nick", placeholder="digite seu nick" required>
+            </div >
+            <br>
+            <div class="campo">
+                <label for="numerodecelular"><strong>Número: </strong> </label>
+                <input type="text", placeholder="Digite aqui seu número de celular", name="numero", id="numero" required>
+            </div>
+            <br>
+            <div , class="campo">
+                <label for="email"><strong>Email: </strong> Email</label>
+                <input type="email", name="email", id="email", placeholder="digete seu email" required>
+            </div>
+            <br>
+            <div , class="campo">
+                <label for="idade"><strong>Idade: </strong> </label>
+                <select name="idade" id="idade">
+                    <option value="">Abaixo de 12</option>
+                    <option value="">De 12 a 14</option>
+                    <option value="">De 15 a 18</option>
+                    <option value="">De 19 a 25</option>
+                    <option value="">Acima de 25</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="grupo">
+
+            <div id="check">
+                <label for="elo" ><strong>Qual seu elo:</strong>  </label> <br>
+                <input type="radio", name="elo", value="bronze"> Bronze <br>
+                <input type="radio", name="elo", value="prata"> Prata <br>
+                <input type="radio", name="elo", value="ouro"> Gold <br>
+                <input type="radio", name="elo", value="platina"> Platina <br>
+                <input type="radio", name="elo", value="diamante"> Diamante <br>
+                <input type="radio", name="elo", value="mestre"> Mestre <br>
+                <input type="radio", name="elo", value="desafiante"> Chalenge
+            </div>
+            <br>
+            <div , class="campo">
+                <br>
+                <label for="rota"><strong> Qual sua rota jogada: </strong> </label> 
+                <label>
+                    <input type="radio", name="rota", value="top" > Top<br>
+                    <input type="radio",  name="rota", value="jungle"> Jungler<br>
+                    <input type="radio",  name="rota", value="mid"> Mid<br>
+                    <input type="radio", name="rota", value="adc"> Adc<br>
+                    <input type="radio", name="rota", value="suporte"> Suporte<br>
+                </label>
+            </div>
+            <br>
+            <div , class="campo">
+              <label for="tipocampeao"><strong> Com qual classe de campeão você gosta de jogar: </strong></label>
+              <input type="checkbox",nome="tipocampeao", id="tipocampeao", value="assasino"> Assasino <br>
+              <input type="checkbox",nome="tipocampeao", id="tipocampeao", value="lutador"> lutador <br>
+              <input type="checkbox",nome="tipocampeao", id="tipocampeao", value="mago"> Mago<br>
+              <input type="checkbox",nome="tipocampeao", id="tipocampeao", value="atirador"> atirador<br>
+              <input type="checkbox",nome="tipocampeao", id="tipocampeao", value="suporte"> Suporte<br>
+              <input type="checkbox",nome="tipocampeao", id="tipocampeao", value="tanque"> Tanque<br>
+            </div>
+            <br>
+            <div , class="campo">
+                <label for="diferencial"><strong> Por que você deveria ser escolhido: </strong></label>
+                <textarea name="diferencial" id="diferencial" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <br>
+        <button type="submit", class="botao">Enviar</button>
+
+            
+        
+    </form>
+</body>
+</html>
